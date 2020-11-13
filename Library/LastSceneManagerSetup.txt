@@ -1,6 +1,10 @@
 sceneSetups:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - path: Assets/Scenes/TitleScreen.unity
+=======
+- path: Assets/Scenes/MainScene.unity
+>>>>>>> Stashed changes
 =======
 - path: Assets/Scenes/MainScene.unity
 >>>>>>> Stashed changes
