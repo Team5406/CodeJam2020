@@ -1,8 +1,9 @@
 ﻿public static class Constants
 {
-    
+    //Player Movement Speed
     public const float moveSpeed = 5f;
 
+    //Sorting Order
     public const int sortingOrderBase = 5000;
 
 
