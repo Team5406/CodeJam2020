@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: fa7df0328f15d49beb6eca014d15f07e
+guid: 6d86154166fea44879128c146665a14f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4004929303627588283
-    second: barrier path_0
+      213: -228615569107628092
+    second: _arrier_0
   - first:
-      213: -6959094745798166211
-    second: barrier path_1
+      213: 6430648722115756891
+    second: _arrier_1
+  - first:
+      213: -3064383004375123011
+    second: _arrier_2
+  - first:
+      213: 7440077345476501034
+    second: _arrier_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,11 +97,23 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barrier path_0
+      name: _arrier_0
       rect:
         serializedVersion: 2
         x: 0
@@ -103,20 +121,41 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54d99b27402ab68c0800000000000000
-      internalID: -4004929303627588283
+      spriteID: 4cf4735e95bc3dcf0800000000000000
+      internalID: -228615569107628092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrier path_1
+      name: _arrier_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53870511f04e3950800000000000000
+      internalID: 6430648722115756891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _arrier_2
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +163,35 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d39b96613345c6f90800000000000000
-      internalID: -6959094745798166211
+      spriteID: dbbf970b4ef1975d0800000000000000
+      internalID: -3064383004375123011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _arrier_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ede8e2de6704760800000000000000
+      internalID: 7440077345476501034
       vertices: []
       indices: 
       edges: []
