@@ -5,18 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ReturnToBase : MonoBehaviour
 {
-
     private bool canReturn;
     // Start is called before the first frame update
     void Start()
     {
-
     }
-
-    //Pick Up Item (place item over head)
     void Update()
     {
-
         if (canReturn && Input.GetKey("e"))
         {
             SceneManager.LoadScene(Constants.homebaseSceneIndex);
@@ -41,4 +36,6 @@ public class ReturnToBase : MonoBehaviour
             canReturn = false;
         }
     }
+
 }
+

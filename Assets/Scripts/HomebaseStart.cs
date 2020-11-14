@@ -3,22 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class HomebaseStart : MonoBehaviour
 {
-
+    public bool adventuring = false;
+    
     private bool canStart;
-    // Start is called before the first frame update
+    public Homebase homebase;
+
     void Start()
     {
-        
     }
-
     //Pick Up Item (place item over head)
     void Update()
     {
 
         if (canStart && Input.GetKey("e"))
         {
+            adventuring = true;
+            homebase.adventuresRemaining -= 1;
             SceneManager.LoadScene(Constants.adventureSceneIndex);
         }
     }
