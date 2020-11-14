@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3936446190085439969}
   - component: {fileID: 6019489931456877596}
   - component: {fileID: -5963580404181434315}
+  - component: {fileID: -1391717817686797448}
   m_Layer: 0
   m_Name: HeldGold
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 8263571779381292708, guid: cd3612f009b7b4a38be8ac0d81b40df9, type: 3}
+--- !u!114 &-1391717817686797448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630459394700185662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f3a167db95eec4b8a973ddf021c56e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0
