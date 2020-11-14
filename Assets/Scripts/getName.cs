@@ -26,7 +26,7 @@ public class getName : MonoBehaviour
 
             errMsg.GetComponent<TextMeshProUGUI>().text = "";
             PlayerPrefs.SetString("Name", playerName);
-            SceneManager.LoadScene(Constants.tradingSceneIndex);
+            SceneManager.LoadScene(Constants.homebaseSceneIndex);
             Debug.Log(playerName);
 
         }

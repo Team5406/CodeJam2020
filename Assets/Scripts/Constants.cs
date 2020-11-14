@@ -15,8 +15,8 @@
 
     //Scene Indexs
     public const int titleScreenIndex = 0;
-    public const int tradingSceneIndex = 1;
-    public const int scavengerHuntIndex = 2;
+    public const int homebaseSceneIndex = 1;
+    public const int adventureSceneIndex = 2;
     public const int endScreenIndex = 3;
 
 }
