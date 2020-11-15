@@ -58,6 +58,6 @@ public static class Constants
     public const int endScreenIndex = 3;
 
     //Number Adventures
-    public const int numberOfAdventures = 20;
+    public const int maxAdventures = 20;
 
 }
