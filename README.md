@@ -1,5 +1,6 @@
 ## About The Project
 The game's story takes place on the planet Mars. The player will be tasked with building a rocket in a Rocket Building competition to fly to the Mars Space Station. Whoever has the better rocket at the end wins the game, and their rocket will be used! The user will be interacting with items scattered across the surface of Mars and will also be trading with their opponent to receive better rocket parts.
+
 **Helping**: The player can call their opponent and start a trade. The opponent will ask for one of the items you have at random. You can choose to keep your item or trade it for their item. If you accept enough trades, you will be offered parts that can not be found elsewhere. You get a limited number of trades (including declined trades), forcing you to sometimes give away items you want, to eventually get better items. The fewer trades you do, the better items your opponent uses on their rocket.
 ## Built With
 This project was build with the Unity Engine, running on version 2020.1.12f.1. All contributers used a Unity Student Pro licence.
@@ -26,7 +27,12 @@ To drop the item you are carrying, use the 'Q' key.
  -  **Engine**: This is where the fuel combusts releasing enough thrust to push the rocket into space.
  -  **Battery**:Stores power needed to run tech devices in the capsule during flight.
  -  **Fuel**: Combustible fluid that is used to create thrust to fly the rocket.
-
+ 
+ ## Known Issues
+ - **Trading**: Unable to actually trade at the moment.
+ -  **Scoring**: Very simplified scoring.
+ -  **Blackout**: Buggy at best
+ 
 ## Credits
 
 Christian Femia - Programming -  [@Christian.Femia](https://www.instagram.com/Christian.femia/)

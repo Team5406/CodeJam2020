@@ -55,7 +55,6 @@ public class DepositFuel : MonoBehaviour
             heldFuel.currentFuel += heldFuel.numFuel;
             canDeposit = false;
             Debug.Log("Deposit Has " + heldFuel.currentFuel + " Fuel");
-            InventoryManagment.updatePlayerFuelInventory(heldFuel.currentFuel);
 
             foreach (Transform child in transform)
             {
