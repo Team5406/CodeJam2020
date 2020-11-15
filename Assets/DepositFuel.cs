@@ -8,6 +8,7 @@ public class DepositFuel : MonoBehaviour
     public bool canDeposit;
     public GameObject fuelLoaderLocation;
     public bool isDepositing;
+    private InventoryManagment inventory;
 
     public GameObject fuelLoaderEmpty;
     public GameObject fuelLoaderOne;
@@ -42,6 +43,7 @@ public class DepositFuel : MonoBehaviour
     {
         heldFuel = GameObject.FindGameObjectWithTag("Player").GetComponent<HeldFuel>();
         updateFuelLoader();
+
     }
 
     // Update is called once per frame
@@ -53,6 +55,7 @@ public class DepositFuel : MonoBehaviour
             heldFuel.currentFuel += heldFuel.numFuel;
             canDeposit = false;
             Debug.Log("Deposit Has " + heldFuel.currentFuel + " Fuel");
+            InventoryManagment.updatePlayerFuelInventory(heldFuel.currentFuel);
 
             foreach (Transform child in transform)
             {

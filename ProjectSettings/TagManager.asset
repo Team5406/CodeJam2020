@@ -9,6 +9,7 @@ TagManager:
   - fuel
   - transition
   - loader
+  - dropper
   layers:
   - Default
   - TransparentFX

@@ -18,15 +18,28 @@ public class DropItem : MonoBehaviour
         Then they update that they are not holding anything */
     public void Update()
     {
-        if(Input.GetKey("q") && dropCheck.canDrop)
+        if (Input.GetKey("q") && dropCheck.canDrop)
         {
+
+            
 
             foreach (Transform child in transform)
             {
-                child.GetComponent<Spawn>().SpawnDroppedItem();
+                if (!dropCheck.dropInBase)
+                {
+                    child.GetComponent<Spawn>().SpawnDroppedItem();
+                }
+
                 GameObject.Destroy(child.gameObject);
             }
+        }
 
+        if (Input.GetKey("q") && dropCheck.dropInBase)
+        {
+            foreach (Transform child in transform)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
         }
 
         if (transform.childCount <= 0)
