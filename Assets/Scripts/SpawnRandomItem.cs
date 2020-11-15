@@ -6,6 +6,7 @@ public class SpawnRandomItem : MonoBehaviour
 {
     public List<GameObject> items = new List<GameObject>();
     System.Random randomItem = new System.Random();
+    public GameObject rock;
 
 
     // the range of X
@@ -29,6 +30,7 @@ public class SpawnRandomItem : MonoBehaviour
         for(int i = 0; i< 50; i++)
         {
             SpawnFuel();
+            SpawnRock();
         }
     }
 
@@ -49,6 +51,12 @@ public class SpawnRandomItem : MonoBehaviour
     {
         Vector2 pos = new Vector2(Random.Range(xMin, xMax), Random.Range(yMin, yMax));
         Instantiate(items[10], pos, transform.rotation);
+    }
+
+    void SpawnRock()
+    {
+        Vector2 pos = new Vector2(Random.Range(xMin, xMax), Random.Range(yMin, yMax));
+        Instantiate(rock, pos, transform.rotation);
     }
 
     GameObject Probability()
