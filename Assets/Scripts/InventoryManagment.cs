@@ -16,43 +16,13 @@ public class InventoryManagment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initInventory();
-        updatePlayerInventory("fuelTankLg", 1);
-        updatePlayerInventory("fuelTankMd", 1);
-        updatePlayerInventory("fuelTankLg", 1);
-        updatePlayerInventory("fuelTankSm", 2);
-        updatePlayerInventory("fuelTankSm", -1);
-        updatePlayerInventory("solarPanel", 2);
-        updatePlayerInventory("batteryLg", 2);
-        updatePlayerInventory("engineMd", 3);
-        updatePlayerFuelInventory(4);
-        updatePlayerFuelInventory(2);
-        updatePlayerFuelInventory(4);
-        updatePlayerFuelInventory(5);
-        updatePlayerFuelInventory(5);
-
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        logPlayerInventory();
-        Debug.Log("Score: " + calculatePlayerScore());
-        calculateOpponentInventory();
-        logOpponentInventory();
-        Debug.Log("Score: " + calculateOpponentScore());
-        switchItems("fuelTankLg", "fuelTankSm");
-        logPlayerInventory();
-        logOpponentInventory();
-        pickItemsToTrade();
-        pickItemsToTrade();
-        pickItemsToTrade();
-        pickItemsToTrade();
-        pickItemsToTrade();
-
-        string[] items = pickItemsToTrade();
-        Debug.Log(items[0]);
-        Debug.Log(items[1]);
+        
     }
 
     public static string[] pickItemsToTrade()
