@@ -8,6 +8,7 @@ TagManager:
   - collider
   - fuel
   - transition
+  - loader
   layers:
   - Default
   - TransparentFX
