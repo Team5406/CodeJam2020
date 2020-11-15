@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 107840106275526281}
   - component: {fileID: 7036824552277163537}
-  - component: {fileID: 7611745066831376424}
   m_Layer: 0
   m_Name: FuelLoaderTwentyThree
   m_TagString: Untagged
@@ -83,16 +82,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7611745066831376424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4098378241702325701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f3a167db95eec4b8a973ddf021c56e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offset: 0
