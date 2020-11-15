@@ -5,7 +5,7 @@ using System.Linq;
 public static class Constants
 {
     //new object type to hold details of a scoreable item
-    class scoreableItem
+   public class scoreableItem
     {
         public double points { get; set; }
         public string objectType { get; set; }
@@ -13,7 +13,7 @@ public static class Constants
     }
 
     //global constant for associating scoreable items with their points and types
-    static Dictionary<string, scoreableItem> scoreableItems = new Dictionary<string, scoreableItem>() {
+   public static Dictionary<string, scoreableItem> scoreableItems = new Dictionary<string, scoreableItem>() {
         { "capsuleSm", new scoreableItem { points=5, objectType="capsule", probability=0.2 } },
         { "capsuleLg", new scoreableItem { points=20, objectType="capsule", probability=0.05 } },
         { "fuelTankSm", new scoreableItem { points=1, objectType="fuelTank", probability=1 } },
@@ -29,7 +29,7 @@ public static class Constants
     };
 
     //global constant for defining the maximum number of each object type
-    static Dictionary<string, int> objectLimits = new Dictionary<string, int>() {
+   public static Dictionary<string, int> objectLimits = new Dictionary<string, int>() {
         { "capsule", 1 },
         { "fuelTank", 3 },
         { "engine", 3 },
