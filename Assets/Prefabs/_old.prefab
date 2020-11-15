@@ -124,8 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 630459394700185662, guid: 28da543b26aba1340ae040ae4203522f, type: 3}
-  whereObjectIsHeld: {fileID: 8346865098589538021, guid: 0396978fc5a99734d966cb1f0e9b5f62,
-    type: 3}
 --- !u!61 &-387045357740697489
 BoxCollider2D:
   m_ObjectHideFlags: 0

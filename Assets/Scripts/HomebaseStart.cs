@@ -3,29 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class HomebaseStart : MonoBehaviour
 {
-
+    public static bool adventuring = false;
+    
     private bool canStart;
-    public bool isLeaving;
-    public Vector2 playerPos;
-    public VectorValue playerStorage;
-    public PlayerMovement player;
-    // Start is called before the first frame update
+    public Homebase homebase;
+
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
-
     //Pick Up Item (place item over head)
     void Update()
     {
 
         if (canStart && Input.GetKey("e"))
         {
-            playerStorage.initialValue = playerPos;
-            isLeaving = true;
             SceneManager.LoadScene(Constants.adventureSceneIndex);
+            Debug.Log(SceneManager.GetActiveScene());
+            Homebase.adventuresRemaining--;
+            adventuring = true;
         }
     }
 
