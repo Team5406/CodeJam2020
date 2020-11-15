@@ -10,6 +10,8 @@ public class DepositFuelInLoader : MonoBehaviour
     void Start()
     {
         heldFuel = GameObject.FindGameObjectWithTag("Player").GetComponent<HeldFuel>();
+        fuelLoader = GameObject.FindGameObjectWithTag("loader").GetComponent<DepositFuel>();
+
     }
 
     // Update is called once per frame
