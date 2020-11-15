@@ -135,10 +135,11 @@ GameObject:
   - component: {fileID: 14023904}
   - component: {fileID: 14023903}
   - component: {fileID: 14023902}
+  - component: {fileID: 14023906}
   m_Layer: 0
   m_Name: FuelLoader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: loader
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -187,7 +188,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -206,18 +207,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.014575481, y: -1.1004462}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5830183, y: 0.3149538}
   m_EdgeRadius: 0
 --- !u!61 &14023904
 BoxCollider2D:
@@ -232,18 +233,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01457548, y: -1.100446}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.583018, y: 0.3149538}
   m_EdgeRadius: 0
 --- !u!4 &14023905
 Transform:
@@ -253,12 +254,80 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14023901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5675828, y: 4.0945144, z: -28.396757}
+  m_LocalPosition: {x: -2.6, y: 2.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &14023906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14023901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f434a58f420e494a8ddd5e8ddb0b5bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxFuel: 25
+  canDeposit: 0
+  fuelLoaderLocation: {fileID: 14023901}
+  isDepositing: 0
+  fuelLoaderEmpty: {fileID: 3408494350870744167, guid: 944b607886ba43a4dab349f2b1c672d7,
+    type: 3}
+  fuelLoaderOne: {fileID: 7167413762613647574, guid: 77da27726cf3822499511a0faa4a838a,
+    type: 3}
+  fuelLoaderTwo: {fileID: 34453727128300747, guid: 328de1070b7c11640a39f816aefd8832,
+    type: 3}
+  fuelLoaderThree: {fileID: 8831646753051694873, guid: 50b550ef1a6c08a4a891145c622416bf,
+    type: 3}
+  fuelLoaderFour: {fileID: 6991178457940750483, guid: 65129f6a349b07744989878edd7777de,
+    type: 3}
+  fuelLoaderFive: {fileID: 666179645756988605, guid: e0c22976e6406084e81476b341ca731b,
+    type: 3}
+  fuelLoaderSix: {fileID: 1190787531603631749, guid: 79e13b037b2c3964981c7a113b27f76d,
+    type: 3}
+  fuelLoaderSeven: {fileID: 5190551286977681152, guid: e56e22d462c3a274d96511e2cbc1c160,
+    type: 3}
+  fuelLoaderEight: {fileID: 3770850197620065922, guid: 31751ffc57947e74b87629ee0e93fd15,
+    type: 3}
+  fuelLoaderNine: {fileID: 3542839438532680907, guid: 0f5ff6af1070dc4429237448594d204e,
+    type: 3}
+  fuelLoaderTen: {fileID: 2553281927212780484, guid: 7b8917fb0a48c9f47b0646005a8476ba,
+    type: 3}
+  fuelLoaderEleven: {fileID: 1565208364107094563, guid: 91d63f72751d6624797729a497581dad,
+    type: 3}
+  fuelLoaderTwelve: {fileID: 4492365325709835225, guid: 75517c5f5bc5b0a4382f1777d06cea68,
+    type: 3}
+  fuelLoaderThirteen: {fileID: 4854068756624315671, guid: cb6d8b474b3bb1446a872e44f09668f0,
+    type: 3}
+  fuelLoaderFourteen: {fileID: 8539151454003483076, guid: 1128b80d9b564c44abe524fde354c384,
+    type: 3}
+  fuelLoaderFifteen: {fileID: 4543771138104014081, guid: f0560203faad15749b9f8c6e19dba3c3,
+    type: 3}
+  fuelLoaderSixteen: {fileID: 5198965289531566545, guid: d021f665e0357ea4aa349410a2e652ef,
+    type: 3}
+  fuelLoaderSeventeen: {fileID: 221679990390297724, guid: 9e1946289b4f90e4580aee45c8c65662,
+    type: 3}
+  fuelLoaderEighteen: {fileID: 3045212321712523363, guid: b032f6d055728b241aa7e86ad0de4e77,
+    type: 3}
+  fuelLoaderNineteen: {fileID: 2059993526502971086, guid: 4e449aa33a7f441c7a2dc8b214ba88f7,
+    type: 3}
+  fuelLoaderTwenty: {fileID: 5788514415370091805, guid: 3ef380b011b7bd84e8a8b33274c72724,
+    type: 3}
+  fuelLoaderTwentyOne: {fileID: 1724667033353238247, guid: 9538e9764d0b78e49b2d8d96d917edd9,
+    type: 3}
+  fuelLoaderTwentyTwo: {fileID: 6307934049213449781, guid: 57daa964464e02045b7ae4cda0f62a8c,
+    type: 3}
+  fuelLoaderTwentyThree: {fileID: 4098378241702325701, guid: ced8d183bf9e2d445a4437bac5f943a3,
+    type: 3}
+  fuelLoaderTwentyFour: {fileID: 4079380042879177206, guid: 018a3b774b9b2b449b3f538260df50f4,
+    type: 3}
+  fuelLoaderFull: {fileID: 4490746942002284356, guid: d09f472e433b4744caa106b01822d953,
+    type: 3}
 --- !u!1001 &44440813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1458,12 +1527,12 @@ PrefabInstance:
     - target: {fileID: 3207712429432200118, guid: b6297c3eb90e6a04a8751b3f238ceece,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.95504093
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3207712429432200118, guid: b6297c3eb90e6a04a8751b3f238ceece,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000019073486
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3207712429432200118, guid: b6297c3eb90e6a04a8751b3f238ceece,
         type: 3}
