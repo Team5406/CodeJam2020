@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class Homebase : MonoBehaviour
 {
-    public int playerScore = 10;
-    public int adventuresRemaining = Constants.numberOfAdventures;
-    public int fuel = 5;
-    void Start()
+    public static int playerScore = 10;
+    public static int adventuresRemaining;
+    public static int fuel = 5;
+    public void Start()
     {
-        PlayerPrefs.SetInt("playerScore", playerScore);
+        adventuresRemaining = Constants.maxAdventures;
+     
+    }
 
-    }
-    void Update()
-    {
-    }
 }
+
 

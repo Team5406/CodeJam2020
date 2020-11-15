@@ -18,22 +18,17 @@ public class HomebaseHeaderBar : MonoBehaviour
 
     //Homebase 
     public HomebaseStart adventures;
-    public Homebase homebase;
+ //   public Homebase homebase;
 
     //THE TEXT FIELDS!!!
     public TextMeshProUGUI playerName;
     public TextMeshProUGUI playerScore;
     public TextMeshProUGUI adventuresRemaining;
-    public TextMeshProUGUI timeLeft;
+   // public TextMeshProUGUI timeLeft;
     public TextMeshProUGUI fuel;
 
     //THE TOGGLE!!!!
     public Toggle muteToggle;
-
-    //some sprites ig
-    public Sprite soundON;
-    public Sprite soundOFF;
-
 
 
     void Start()
@@ -44,10 +39,10 @@ public class HomebaseHeaderBar : MonoBehaviour
     
     void Update()
     {
-        playerScore.GetComponent<TextMeshProUGUI>().text = "Score: " + homebase.playerScore.ToString();
-        adventuresRemaining.GetComponent<TextMeshProUGUI>().text = "Adventures Remaining " + homebase.adventuresRemaining.ToString();
-        timeLeft.GetComponent<TextMeshProUGUI>().text = 
-        fuel.GetComponent<TextMeshProUGUI>().text = "Fuel: " + homebase.fuel.ToString();
+        playerScore.GetComponent<TextMeshProUGUI>().text = "Score: " + Homebase.playerScore.ToString();
+        adventuresRemaining.GetComponent<TextMeshProUGUI>().text = "Adventures Remaining " + Homebase.adventuresRemaining.ToString();
+        //timeLeft.GetComponent<TextMeshProUGUI>().text = 
+        fuel.GetComponent<TextMeshProUGUI>().text = "Fuel: " + Homebase.fuel.ToString();
         
     }
 

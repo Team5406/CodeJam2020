@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class HomebaseStart : MonoBehaviour
 {
-    public bool adventuring = false;
+    public static bool adventuring = false;
     
     private bool canStart;
     public Homebase homebase;
@@ -20,9 +20,10 @@ public class HomebaseStart : MonoBehaviour
 
         if (canStart && Input.GetKey("e"))
         {
-            adventuring = true;
-            homebase.adventuresRemaining -= 1;
             SceneManager.LoadScene(Constants.adventureSceneIndex);
+            Debug.Log(SceneManager.GetActiveScene());
+            Homebase.adventuresRemaining--;
+            adventuring = true;
         }
     }
 
