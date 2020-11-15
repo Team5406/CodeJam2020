@@ -135,6 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7164396563623620611}
   - component: {fileID: 7164396563623620860}
+  - component: {fileID: 8953713321409889098}
   - component: {fileID: 7164396563623620861}
   - component: {fileID: 7887080883716085862}
   - component: {fileID: 3751694883281274134}
@@ -216,6 +217,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &8953713321409889098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164396563623620862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd803e518db848e8915bde88dadad4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7164396563623620861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 7887080883716085862}
   startingPos: {fileID: 11400000, guid: 0307d526073c43544b9b8ffea664c709, type: 2}
-  sceneTransition: {fileID: 0}
 --- !u!50 &7887080883716085862
 Rigidbody2D:
   serializedVersion: 4
@@ -326,6 +338,7 @@ MonoBehaviour:
   numFuel: 0
   maxFuel: 5
   FuelTankLocation: {fileID: 2095773715}
+  currentFuel: 0
 --- !u!1001 &8346865098868117855
 PrefabInstance:
   m_ObjectHideFlags: 0
