@@ -7,10 +7,14 @@ public class HomebaseStart : MonoBehaviour
 {
 
     private bool canStart;
+    public bool isLeaving;
+    public Vector2 playerPos;
+    public VectorValue playerStorage;
+    public PlayerMovement player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     //Pick Up Item (place item over head)
@@ -19,6 +23,8 @@ public class HomebaseStart : MonoBehaviour
 
         if (canStart && Input.GetKey("e"))
         {
+            playerStorage.initialValue = playerPos;
+            isLeaving = true;
             SceneManager.LoadScene(Constants.adventureSceneIndex);
         }
     }

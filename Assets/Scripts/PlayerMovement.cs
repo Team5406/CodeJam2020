@@ -5,6 +5,10 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     private float moveSpeed;
+    public static PlayerMovement Instance;
+    public VectorValue startingPos;
+    private SceneTransition sceneTransition;
+
 
     Animator animator;
 
@@ -15,6 +19,21 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         moveSpeed = Constants.moveSpeed;
+
+        if (Instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        Instance = this;
+        GameObject.DontDestroyOnLoad(this.gameObject);
+
+
+
+        sceneTransition = GameObject.FindGameObjectWithTag("transition").GetComponent<SceneTransition>();
+
+
     }
 
 
@@ -34,10 +53,13 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Look X", lookDirection.x);
         animator.SetFloat("Look Y", lookDirection.y);
         animator.SetFloat("Speed", move.magnitude);
+
+
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
 }

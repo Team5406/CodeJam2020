@@ -20,6 +20,7 @@ public class DropItem : MonoBehaviour
     {
         if(Input.GetKey("q") && dropCheck.canDrop)
         {
+
             foreach (Transform child in transform)
             {
                 child.GetComponent<Spawn>().SpawnDroppedItem();

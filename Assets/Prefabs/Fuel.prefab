@@ -149,6 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de4947910afddb41858379a75e9cd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPickUp: 0
+  isMaxFuel: 0
   didGetFuel: 0
   FuelEmpty: {fileID: 1860238747174969721, guid: 662b8d1c3d4271f4796d5479c0027948,
     type: 3}

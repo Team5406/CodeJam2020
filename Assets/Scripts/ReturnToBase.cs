@@ -7,20 +7,42 @@ public class ReturnToBase : MonoBehaviour
 {
 
     private bool canReturn;
+    public bool isReturning;
+    public Vector2 playerPos;
+    public VectorValue playerStorage;
+    public PlayerMovement player;
+    private int sceneIndex = 1;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     //Pick Up Item (place item over head)
     void Update()
     {
 
-        if (canReturn && Input.GetKey("e"))
+        if (sceneIndex == 2)
         {
-            SceneManager.LoadScene(Constants.homebaseSceneIndex);
+            if (canReturn && Input.GetKey("e"))
+            {
+                playerStorage.initialValue = playerPos;
+                isReturning = true;
+                SceneManager.LoadScene(sceneIndex--);
+            }
         }
+
+        if (sceneIndex == 1)
+        {
+            if (canReturn && Input.GetKey("e"))
+            {
+                playerStorage.initialValue = playerPos;
+                isReturning = true;
+                SceneManager.LoadScene(sceneIndex++);
+            }
+        }
+
     }
 
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - item
   - collider
+  - fuel
+  - transition
   layers:
   - Default
   - TransparentFX
