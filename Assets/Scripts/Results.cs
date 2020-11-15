@@ -8,8 +8,8 @@ public class Results : MonoBehaviour
     public TextMeshProUGUI results;
     public TextMeshProUGUI playerScoreText;
     public TextMeshProUGUI opponentScoreText;
-    int playerScore = 10;
-    int opponentScore = 2;
+    int playerScore = Homebase.playerScore;
+    int opponentScore = 15;
 
     void Start()
     {
@@ -27,7 +27,7 @@ public class Results : MonoBehaviour
         }
 
         playerScoreText.GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("Name") + "'s Score: " + playerScore.ToString();
-        opponentScoreText.GetComponent<TextMeshProUGUI>().text = "Opponent's Score " + opponentScore.ToString();
+        opponentScoreText.GetComponent<TextMeshProUGUI>().text = "Opponent's Score: " + opponentScore.ToString();
        
     }
 
