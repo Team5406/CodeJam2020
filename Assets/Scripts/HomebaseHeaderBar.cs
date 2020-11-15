@@ -40,7 +40,7 @@ public class HomebaseHeaderBar : MonoBehaviour
     void Update()
     {
         playerScore.GetComponent<TextMeshProUGUI>().text = "Score: " + Homebase.playerScore.ToString();
-        adventuresRemaining.GetComponent<TextMeshProUGUI>().text = "Adventures Remaining " + Homebase.adventuresRemaining.ToString();
+       
         //timeLeft.GetComponent<TextMeshProUGUI>().text = 
         fuel.GetComponent<TextMeshProUGUI>().text = "Fuel: " + Homebase.fuel.ToString();
         
