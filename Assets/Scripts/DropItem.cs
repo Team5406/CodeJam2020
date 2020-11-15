@@ -21,15 +21,13 @@ public class DropItem : MonoBehaviour
         if (Input.GetKey("q") && dropCheck.canDrop)
         {
 
-            
-
             foreach (Transform child in transform)
             {
                 if (!dropCheck.dropInBase)
                 {
                     child.GetComponent<Spawn>().SpawnDroppedItem();
                 }
-
+                GameObject obj = child.gameObject;
                 GameObject.Destroy(child.gameObject);
             }
         }
@@ -38,7 +36,9 @@ public class DropItem : MonoBehaviour
         {
             foreach (Transform child in transform)
             {
+                GameObject obj = child.gameObject;
                 GameObject.Destroy(child.gameObject);
+                Debug.Log(obj);
             }
         }
 
